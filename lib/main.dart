@@ -15,15 +15,21 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        drawer: Drawer(
+            backgroundColor: Colors.green[200], child: ListView(children: [])),
         backgroundColor: Colors.lightGreen,
         appBar: AppBar(
           backgroundColor: Colors.green,
           title: const Text("GeeksforGeeks"),
         ), // AppBar
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Center(
-              child: Text("Hello Geeks!!"),
+              child: Text(
+                "Hello Geeks!!",
+                style: TextStyle(fontSize: 49),
+              ),
             ),
           ],
         ), // Container
