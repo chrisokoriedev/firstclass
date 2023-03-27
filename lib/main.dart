@@ -16,7 +16,46 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         drawer: Drawer(
-            backgroundColor: Colors.green[200], child: ListView(children: [])),
+          backgroundColor: Colors.green[200],
+          child: ListView(
+            children: [
+              const DrawerHeader(
+                decoration: BoxDecoration(color: Colors.lime),
+                child: FlutterLogo(
+                  size: 10,
+                ),
+              ),
+              ListTile(
+                hoverColor: Colors.amber,
+                onTap: () {},
+                leading: Icon(Icons.home),
+                title: Text('Home'),
+                trailing: Icon(Icons.arrow_circle_right),
+              ),
+              ListTile(
+                hoverColor: Colors.amber,
+                onTap: () {},
+                leading: Icon(Icons.shop),
+                title: Text('shop'),
+                trailing: Icon(Icons.arrow_circle_right),
+              ),
+              ListTile(
+                hoverColor: Colors.amber,
+                onTap: () {},
+                leading: Icon(Icons.shopping_cart_outlined),
+                title: Text('order'),
+                trailing: Icon(Icons.arrow_circle_right),
+              ),
+              ListTile(
+                hoverColor: Colors.amber,
+                onTap: () {},
+                leading: Icon(Icons.exit_to_app),
+                title: Text('logout'),
+                trailing: Icon(Icons.arrow_circle_right),
+              ),
+            ],
+          ),
+        ),
         backgroundColor: Colors.lightGreen,
         appBar: AppBar(
           backgroundColor: Colors.green,
@@ -31,6 +70,16 @@ class _MyAppState extends State<MyApp> {
                 style: TextStyle(fontSize: 49),
               ),
             ),
+          ],
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          backgroundColor: Colors.lightGreen,
+          items: [
+            BottomNavigationBarItem(icon: Icon(Icons.abc), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.abc), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.abc), label: 'Home'),
+            BottomNavigationBarItem(icon: Icon(Icons.abc), label: 'Home'),
           ],
         ), // Container
       ), // Scaffold
