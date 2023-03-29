@@ -61,21 +61,17 @@ class _MyAppState extends State<MyApp> {
           backgroundColor: Colors.green,
           title: const Text("GeeksforGeeks"),
         ), // AppBar
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Center(
-              child: Text(
-                "Hello Geeks!!",
-                style: TextStyle(fontSize: 49),
-              ),
-            ),
-          ],
+        body: Container(
+          child: Text(
+            "Hello! i am inside a container!",
+            style: TextStyle(fontSize: 20),
+          ),
         ),
+
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.lightGreen,
-          items: [
+          items: const [
             BottomNavigationBarItem(icon: Icon(Icons.abc), label: 'Home'),
             BottomNavigationBarItem(icon: Icon(Icons.abc), label: 'Home'),
             BottomNavigationBarItem(icon: Icon(Icons.abc), label: 'Home'),
