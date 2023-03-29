@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 void main() => runApp(const MyApp());
 
@@ -15,6 +16,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        backgroundColor: Color(0xffEDF1D6),
         drawer: Drawer(
           backgroundColor: Colors.green[200],
           child: ListView(
@@ -28,43 +30,44 @@ class _MyAppState extends State<MyApp> {
               ListTile(
                 hoverColor: Colors.amber,
                 onTap: () {},
-                leading: Icon(Icons.home),
-                title: Text('Home'),
-                trailing: Icon(Icons.arrow_circle_right),
+                leading: const Icon(Icons.home),
+                title: const Text('Home'),
+                trailing: const Icon(Icons.arrow_circle_right),
               ),
               ListTile(
                 hoverColor: Colors.amber,
                 onTap: () {},
-                leading: Icon(Icons.shop),
-                title: Text('shop'),
-                trailing: Icon(Icons.arrow_circle_right),
+                leading: const Icon(Icons.shop),
+                title: const Text('shop'),
+                trailing: const Icon(Icons.arrow_circle_right),
               ),
               ListTile(
                 hoverColor: Colors.amber,
                 onTap: () {},
-                leading: Icon(Icons.shopping_cart_outlined),
-                title: Text('order'),
-                trailing: Icon(Icons.arrow_circle_right),
+                leading: const Icon(Icons.shopping_cart_outlined),
+                title: const Text('order'),
+                trailing: const Icon(Icons.arrow_circle_right),
               ),
               ListTile(
                 hoverColor: Colors.amber,
                 onTap: () {},
-                leading: Icon(Icons.exit_to_app),
-                title: Text('logout'),
-                trailing: Icon(Icons.arrow_circle_right),
+                leading: const Icon(Icons.exit_to_app),
+                title: const Text('logout'),
+                trailing: const Icon(Icons.arrow_circle_right),
               ),
             ],
           ),
         ),
-        backgroundColor: Colors.lightGreen,
+
         appBar: AppBar(
           backgroundColor: Colors.green,
           title: const Text("GeeksforGeeks"),
         ), // AppBar
         body: Container(
-          child: Text(
+          color: Color(0xff9DC08B),
+          child: const Text(
             "Hello! i am inside a container!",
-            style: TextStyle(fontSize: 20),
+            style: TextStyle(fontSize: 50),
           ),
         ),
 
