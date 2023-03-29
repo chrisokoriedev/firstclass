@@ -23,6 +23,8 @@ class _MyAppState extends State<MyApp> {
         body: Container(
           width: double.infinity,
           height: 300,
+          margin: EdgeInsets.symmetric(horizontal: 20, vertical: 50),
+          padding: EdgeInsets.symmetric(horizontal: 20, vertical: 50),
           color: const Color(0xff9DC08B),
           child: const Text(
             "Hello! i am inside a container!",
