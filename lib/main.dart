@@ -27,15 +27,14 @@ class _MyAppState extends State<MyApp> {
           padding: EdgeInsets.all(30),
           alignment: Alignment.center,
           decoration: BoxDecoration(
-            shape: BoxShape.circle,
-            color: const Color(0xff9DC08B),
-          ),
+              color: const Color(0xff9DC08B),
+              borderRadius: BorderRadius.circular(30)),
           child: const Text(
             "Hello! i am inside a container!",
             style: TextStyle(fontSize: 20),
           ),
         ),
-
+// Radius.circular(20)
         bottomNavigationBar: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
           backgroundColor: Colors.lightGreen,
