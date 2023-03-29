@@ -23,19 +23,29 @@ class _MyAppState extends State<MyApp> {
         body: Container(
           width: double.infinity,
           height: 300,
-          margin: EdgeInsets.symmetric(horizontal: 20, vertical: 50),
-          padding: EdgeInsets.all(30),
+          margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
+          padding: const EdgeInsets.all(30),
           alignment: Alignment.center,
+          transform: Matrix4.rotationZ(0.1),
           decoration: BoxDecoration(
-              color: const Color(0xff9DC08B),
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(20),
-                bottomRight: Radius.circular(20),
+            color: const Color(0xff9DC08B),
+            borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(20),
+              bottomRight: Radius.circular(20),
+            ),
+            border: Border.all(
+                color: const Color(0xff40513B),
+                width: 3,
+                style: BorderStyle.solid),
+            boxShadow: [
+              const BoxShadow(
+                color: Color(0xff996073),
+                offset: Offset(7, 7),
+                blurRadius: 20,
+                spreadRadius: 10,
               ),
-              border: Border.all(
-                  color: Color(0xff40513B),
-                  width: 3,
-                  style: BorderStyle.solid)),
+            ],
+          ),
           child: const Text(
             "Hello! i am inside a container!",
             style: TextStyle(fontSize: 20),
