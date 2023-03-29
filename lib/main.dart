@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,58 +15,18 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color(0xffEDF1D6),
-        drawer: Drawer(
-          backgroundColor: Colors.green[200],
-          child: ListView(
-            children: [
-              const DrawerHeader(
-                decoration: BoxDecoration(color: Colors.lime),
-                child: FlutterLogo(
-                  size: 10,
-                ),
-              ),
-              ListTile(
-                hoverColor: Colors.amber,
-                onTap: () {},
-                leading: const Icon(Icons.home),
-                title: const Text('Home'),
-                trailing: const Icon(Icons.arrow_circle_right),
-              ),
-              ListTile(
-                hoverColor: Colors.amber,
-                onTap: () {},
-                leading: const Icon(Icons.shop),
-                title: const Text('shop'),
-                trailing: const Icon(Icons.arrow_circle_right),
-              ),
-              ListTile(
-                hoverColor: Colors.amber,
-                onTap: () {},
-                leading: const Icon(Icons.shopping_cart_outlined),
-                title: const Text('order'),
-                trailing: const Icon(Icons.arrow_circle_right),
-              ),
-              ListTile(
-                hoverColor: Colors.amber,
-                onTap: () {},
-                leading: const Icon(Icons.exit_to_app),
-                title: const Text('logout'),
-                trailing: const Icon(Icons.arrow_circle_right),
-              ),
-            ],
-          ),
-        ),
-
+        backgroundColor: const Color(0xffEDF1D6),
         appBar: AppBar(
           backgroundColor: Colors.green,
           title: const Text("GeeksforGeeks"),
         ), // AppBar
         body: Container(
-          color: Color(0xff9DC08B),
+          width: double.infinity,
+          height: 300,
+          color: const Color(0xff9DC08B),
           child: const Text(
             "Hello! i am inside a container!",
-            style: TextStyle(fontSize: 50),
+            style: TextStyle(fontSize: 20),
           ),
         ),
 
