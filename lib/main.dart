@@ -1,4 +1,4 @@
-import 'dart:ui';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +20,7 @@ class _MyAppState extends State<MyApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Container(
+          width: double.infinity,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/bg.jpg'),
@@ -30,7 +31,15 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
           ),
-          child: Column(children: []),
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Text(
+              'boniad',
+              style: GoogleFonts.alatsi(
+                fontSize: 50,
+                color: Colors.white,
+              ),
+            )
+          ]),
         ),
       ),
     ); // MaterialApp
