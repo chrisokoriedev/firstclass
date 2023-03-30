@@ -30,6 +30,7 @@ class _MyAppState extends State<MyApp> {
               ),
             ),
           ),
+          child: Column(children: []),
         ),
       ),
     ); // MaterialApp
