@@ -163,6 +163,19 @@ class _MyAppState extends State<MyApp> {
                       ],
                     ),
                     SizedBox(height: 20),
+                    Container(
+                        width: 250,
+                        height: 30,
+                        decoration: BoxDecoration(
+                            color: Color(0xff9DC08B),
+                            borderRadius: BorderRadius.circular(30)),
+                        child: Center(
+                          child: Text(
+                            'Sign Up',
+                            style: TextStyle(
+                                fontSize: 18, color: Color(0xffEDF1D6)),
+                          ),
+                        ))
                   ],
                 ),
               ),
