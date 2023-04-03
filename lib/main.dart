@@ -66,6 +66,7 @@ class _MyAppState extends State<MyApp> {
                         color: Color(0xffEDF1D6),
                       ),
                     ),
+                    SizedBox(height: 30),
                     Row(
                       children: [
                         Icon(
@@ -78,13 +79,63 @@ class _MyAppState extends State<MyApp> {
                             keyboardType: TextInputType.name,
                             textAlign: TextAlign.center,
                             decoration: InputDecoration(
-                                hintText: 'username',
-                                hintStyle: TextStyle(
-                                  color: Colors.white,
-                                ),
-                                border: OutlineInputBorder(
-                                    borderSide:
-                                        BorderSide(color: Colors.white))),
+                              hintText: 'username',
+                              hintStyle: TextStyle(
+                                color: Colors.white,
+                              ),
+                              enabledBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(color: Colors.white),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 30),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.person,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 250,
+                          child: TextFormField(
+                            keyboardType: TextInputType.name,
+                            textAlign: TextAlign.center,
+                            decoration: InputDecoration(
+                              hintText: 'username',
+                              hintStyle: TextStyle(
+                                color: Colors.white,
+                              ),
+                              enabledBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(color: Colors.white),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.person,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 250,
+                          child: TextFormField(
+                            keyboardType: TextInputType.name,
+                            textAlign: TextAlign.center,
+                            decoration: InputDecoration(
+                              hintText: 'username',
+                              hintStyle: TextStyle(
+                                color: Colors.white,
+                              ),
+                              enabledBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(color: Colors.white),
+                              ),
+                            ),
                           ),
                         ),
                       ],
