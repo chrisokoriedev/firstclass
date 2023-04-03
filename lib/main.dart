@@ -63,6 +63,7 @@ class _MyAppState extends State<MyApp> {
                       child: Icon(
                         Icons.person,
                         size: 60,
+                        color: Color(0xffEDF1D6),
                       ),
                     ),
                     Row(
@@ -74,13 +75,16 @@ class _MyAppState extends State<MyApp> {
                         SizedBox(
                           width: 250,
                           child: TextFormField(
+                            keyboardType: TextInputType.name,
                             textAlign: TextAlign.center,
                             decoration: InputDecoration(
-                              hintText: 'username',
-                              hintStyle: TextStyle(
-                                color: Colors.white,
-                              ),
-                            ),
+                                hintText: 'username',
+                                hintStyle: TextStyle(
+                                  color: Colors.white,
+                                ),
+                                border: OutlineInputBorder(
+                                    borderSide:
+                                        BorderSide(color: Colors.white))),
                           ),
                         ),
                       ],
