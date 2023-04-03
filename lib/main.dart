@@ -13,7 +13,7 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {s
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,7 +21,7 @@ class _MyAppState extends State<MyApp> {s
       home: Scaffold(
         body: Container(
           width: double.infinity,
-          padding: EdgeInsets.symmetric(horizontal: 30),
+          padding: EdgeInsets.symmetric(horizontal: 20),
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/bg.jpg'),
@@ -33,19 +33,42 @@ class _MyAppState extends State<MyApp> {s
             children: [
               Container(
                 width: double.infinity,
-                height: 700,
+                padding: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
                 alignment: Alignment.center,
-                decoration: BoxDecoration(color: Colors.green.withOpacity(0.4),
-                borderRadius: BorderRadius.circular(20),),
+                decoration: BoxDecoration(
+                  color: Colors.green.withOpacity(0.4),
+                  borderRadius: BorderRadius.circular(20),
+                ),
                 child: Column(
                   children: [
-                    Text(
-                      'boniad',
-                      style: GoogleFonts.alatsi(
-                        fontSize: 50,
-                        color: Colors.white,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'Login',
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 40),
+                    CircleAvatar(
+                      radius: 40,
+                      child: Icon(
+                        Icons.person,
+                        size: 60,
                       ),
                     ),
+                    TextFormField(),
+                    TextFormField(),
+                    TextFormField(),
+                    TextFormField(),
+                    TextFormField(),
                   ],
                 ),
               ),
