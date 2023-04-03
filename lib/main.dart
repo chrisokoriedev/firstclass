@@ -36,7 +36,7 @@ class _MyAppState extends State<MyApp> {
                 padding: EdgeInsets.symmetric(vertical: 30, horizontal: 10),
                 alignment: Alignment.center,
                 decoration: BoxDecoration(
-                  color: Colors.green.withOpacity(0.4),
+                  color: Color(0xff40513B).withOpacity(0.8),
                   borderRadius: BorderRadius.circular(20),
                 ),
                 child: Column(
@@ -58,17 +58,33 @@ class _MyAppState extends State<MyApp> {
                     ),
                     SizedBox(height: 40),
                     CircleAvatar(
+                      backgroundColor: Color(0xff609966),
                       radius: 40,
                       child: Icon(
                         Icons.person,
                         size: 60,
                       ),
                     ),
-                    TextFormField(),
-                    TextFormField(),
-                    TextFormField(),
-                    TextFormField(),
-                    TextFormField(),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.person,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 250,
+                          child: TextFormField(
+                            textAlign: TextAlign.center,
+                            decoration: InputDecoration(
+                              hintText: 'username',
+                              hintStyle: TextStyle(
+                                color: Colors.white,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),
