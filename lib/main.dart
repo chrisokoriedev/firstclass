@@ -45,7 +45,14 @@ class _MyAppState extends State<MyApp> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const LoginPage(),
+                              ),
+                            );
+                          },
                           child: Text(
                             'Login',
                             style: TextStyle(
@@ -184,5 +191,17 @@ class _MyAppState extends State<MyApp> {
         ),
       ),
     ); // MaterialApp
+  }
+}
+
+class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Container(
+        child: Column(children: []),
+      ),
+    );
   }
 }
