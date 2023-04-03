@@ -56,7 +56,7 @@ class _MyAppState extends State<MyApp> {
                         ),
                       ],
                     ),
-                    SizedBox(height: 40),
+                    SizedBox(height: 20),
                     CircleAvatar(
                       backgroundColor: Color(0xff609966),
                       radius: 40,
@@ -66,7 +66,7 @@ class _MyAppState extends State<MyApp> {
                         color: Color(0xffEDF1D6),
                       ),
                     ),
-                    SizedBox(height: 30),
+                    SizedBox(height: 10),
                     Row(
                       children: [
                         Icon(
@@ -79,10 +79,9 @@ class _MyAppState extends State<MyApp> {
                             keyboardType: TextInputType.name,
                             textAlign: TextAlign.center,
                             decoration: InputDecoration(
-                              hintText: 'username',
-                              hintStyle: TextStyle(
-                                color: Colors.white,
-                              ),
+                              hintText: 'User name',
+                              hintStyle:
+                                  TextStyle(color: Colors.white, fontSize: 18),
                               enabledBorder: UnderlineInputBorder(
                                 borderSide: BorderSide(color: Colors.white),
                               ),
@@ -91,23 +90,22 @@ class _MyAppState extends State<MyApp> {
                         ),
                       ],
                     ),
-                    SizedBox(height: 30),
+                    SizedBox(height: 10),
                     Row(
                       children: [
                         Icon(
-                          Icons.person,
+                          Icons.mail,
                           color: Colors.white,
                         ),
                         SizedBox(
                           width: 250,
                           child: TextFormField(
-                            keyboardType: TextInputType.name,
+                            keyboardType: TextInputType.emailAddress,
                             textAlign: TextAlign.center,
                             decoration: InputDecoration(
-                              hintText: 'username',
-                              hintStyle: TextStyle(
-                                color: Colors.white,
-                              ),
+                              hintText: 'Email',
+                              hintStyle:
+                                  TextStyle(color: Colors.white, fontSize: 18),
                               enabledBorder: UnderlineInputBorder(
                                 borderSide: BorderSide(color: Colors.white),
                               ),
@@ -116,22 +114,22 @@ class _MyAppState extends State<MyApp> {
                         ),
                       ],
                     ),
+                    SizedBox(height: 10),
                     Row(
                       children: [
                         Icon(
-                          Icons.person,
+                          Icons.calendar_month,
                           color: Colors.white,
                         ),
                         SizedBox(
                           width: 250,
                           child: TextFormField(
-                            keyboardType: TextInputType.name,
+                            keyboardType: TextInputType.datetime,
                             textAlign: TextAlign.center,
                             decoration: InputDecoration(
-                              hintText: 'username',
-                              hintStyle: TextStyle(
-                                color: Colors.white,
-                              ),
+                              hintText: 'Date of birth',
+                              hintStyle:
+                                  TextStyle(color: Colors.white, fontSize: 18),
                               enabledBorder: UnderlineInputBorder(
                                 borderSide: BorderSide(color: Colors.white),
                               ),
@@ -140,6 +138,31 @@ class _MyAppState extends State<MyApp> {
                         ),
                       ],
                     ),
+                    SizedBox(height: 10),
+                    Row(
+                      children: [
+                        Icon(
+                          Icons.key,
+                          color: Colors.white,
+                        ),
+                        SizedBox(
+                          width: 250,
+                          child: TextFormField(
+                            keyboardType: TextInputType.visiblePassword,
+                            textAlign: TextAlign.center,
+                            decoration: InputDecoration(
+                              hintText: 'Password',
+                              hintStyle:
+                                  TextStyle(color: Colors.white, fontSize: 18),
+                              enabledBorder: UnderlineInputBorder(
+                                borderSide: BorderSide(color: Colors.white),
+                              ),
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 20),
                   ],
                 ),
               ),
