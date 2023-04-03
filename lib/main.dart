@@ -13,7 +13,7 @@ class MyApp extends StatefulWidget {
   _MyAppState createState() => _MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class _MyAppState extends State<MyApp> {s
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,25 +21,36 @@ class _MyAppState extends State<MyApp> {
       home: Scaffold(
         body: Container(
           width: double.infinity,
+          padding: EdgeInsets.symmetric(horizontal: 30),
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage('assets/bg.jpg'),
               fit: BoxFit.cover,
-              colorFilter: ColorFilter.mode(
-                Colors.blue.withOpacity(0.3),
-                BlendMode.plus,
-              ),
             ),
           ),
-          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
-            Text(
-              'boniad',
-              style: GoogleFonts.alatsi(
-                fontSize: 50,
-                color: Colors.white,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                width: double.infinity,
+                height: 700,
+                alignment: Alignment.center,
+                decoration: BoxDecoration(color: Colors.green.withOpacity(0.4),
+                borderRadius: BorderRadius.circular(20),),
+                child: Column(
+                  children: [
+                    Text(
+                      'boniad',
+                      style: GoogleFonts.alatsi(
+                        fontSize: 50,
+                        color: Colors.white,
+                      ),
+                    ),
+                  ],
+                ),
               ),
-            )
-          ]),
+            ],
+          ),
         ),
       ),
     ); // MaterialApp
