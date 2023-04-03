@@ -1,7 +1,7 @@
+import 'package:clickcounter/style.dart';
+import 'package:clickcounter/widget.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:motocheck_limited_clone/custom%20widget/widget.dart';
-import 'package:motocheck_limited_clone/style/style.dart';
 
 class NavigatorDrawer extends StatelessWidget {
   const NavigatorDrawer({
