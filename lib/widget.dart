@@ -17,7 +17,7 @@ containStatus(String status, Color textColor, Color bgColor) {
           children: [
             const Text(
               'Mr. Joseph Agunbiade',
-              style: TextStyle(fontSize: 20),
+              style: TextStyle(fontSize: 17),
             ),
             Container(
                 padding: const EdgeInsets.all(8),
@@ -25,7 +25,7 @@ containStatus(String status, Color textColor, Color bgColor) {
                     color: bgColor, borderRadius: BorderRadius.circular(5)),
                 child: Text(
                   status,
-                  style: TextStyle(color: textColor),
+                  style: TextStyle(color: textColor, fontSize: 16),
                 ))
           ],
         ),
@@ -46,7 +46,10 @@ containStatus(String status, Color textColor, Color bgColor) {
             SizedBox(
               width: 10,
             ),
-            Text('14 July, 4:00pm - 7:00pm'),
+            Text('14 July, 4:00pm - 7:00pm',
+                style: TextStyle(
+                  fontSize: 15,
+                )),
           ],
         )
       ],
