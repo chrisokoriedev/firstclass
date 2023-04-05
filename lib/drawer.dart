@@ -20,11 +20,10 @@ class NavigatorDrawer extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                space(40),
-                Image.asset(
-                  'assets/logo.png',
-                  width: 160,
-                ),
+                Center(
+                    child: FlutterLogo(
+                  size: 60,
+                )),
                 space(40),
                 menu(
                   'Overview',
@@ -32,57 +31,57 @@ class NavigatorDrawer extends StatelessWidget {
                   kBlackColor,
                   kSecondaryColor,
                 ),
-                space(20),
+                space(10),
                 const Divider(),
-                space(20),
+                space(10),
                 menu(
                   'Inspection',
                   Icons.terminal,
                   kBlackColor,
                   kSecondaryColor,
                 ),
-                space(50),
+                space(30),
                 menu(
                   'Notifications',
                   Icons.notifications_rounded,
                   kBlackColor,
                   kSecondaryColor,
                 ),
-                space(50),
+                space(30),
                 menu(
                   'Maintenance',
                   FontAwesomeIcons.database,
                   kBlackColor,
                   kSecondaryColor,
                 ),
-                space(50),
+                space(30),
                 menu(
                   'Wallet',
                   FontAwesomeIcons.wallet,
                   kBlackColor,
                   kSecondaryColor,
                 ),
-                space(50),
+                space(30),
                 menu(
                   'Inspection',
                   FontAwesomeIcons.chartBar,
                   kBlackColor,
                   kSecondaryColor,
                 ),
-                space(50),
+                space(30),
                 menu(
                   'Logout',
                   FontAwesomeIcons.arrowRightFromBracket,
-                  kGreyColor,
-                  kGreyColor,
+                  Colors.red,
+                  kSecondaryColor,
                 ),
               ],
             ),
+            Spacer(),
             Row(
               children: [
-                Image.asset(
-                  'assets/user.png',
-                  width: 60,
+                CircleAvatar(
+                  child: Icon(Icons.person),
                 ),
                 const SizedBox(width: 20),
                 Column(
@@ -103,7 +102,7 @@ class NavigatorDrawer extends StatelessWidget {
                   ],
                 )
               ],
-            )
+            ),
           ],
         ),
       ),

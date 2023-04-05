@@ -5,7 +5,6 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 containStatus(String status, Color textColor, Color bgColor) {
   return Container(
     width: double.infinity,
-    height: 135,
     padding: kDefaultPadding,
     decoration: BoxDecoration(
         color: kWhiteColor, borderRadius: BorderRadius.circular(10)),
@@ -75,7 +74,10 @@ headerSub(String title) {
 }
 
 SizedBox space(double lenght) => SizedBox(height: lenght);
-Container compotwo(String title, String subtitle, String dirImage) {
+Container compotwo(
+  String title,
+  String subtitle,
+) {
   return Container(
     height: 130,
     width: double.infinity,
@@ -95,7 +97,7 @@ Container compotwo(String title, String subtitle, String dirImage) {
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(5),
                     border: Border.all(color: kSecondaryColor, width: 1.0)),
-                child: Image.asset(dirImage)),
+                child: Icon(Icons.abc)),
           ],
         ),
         const SizedBox(
